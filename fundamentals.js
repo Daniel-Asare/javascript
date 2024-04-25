@@ -1,4 +1,5 @@
 /*
+
 //Datatypes
 true;
 let javascriptIsFun =  true;
@@ -117,8 +118,7 @@ if (age >= 18){
   let n = '1' + 1;
   n -= 1;
   console.log(n);
-  */
-
+  
   // 5 falsy values: 0, '', undefined, null, NaN
 
 console.log(Boolean(0));
@@ -141,3 +141,73 @@ if (height){
 } else {
   console.log(' Height is UNDEFINED');
 }
+
+
+// Boolean Logic
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// const shouldDrive = hasDriversLicense && hasGoodVision;
+
+// if(shouldDrive){
+//   console.log('Sarah is able to drive');
+// }else{
+//   console.log('Someonelse should drive...');
+// }
+
+const isTired = false; 
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
+if(hasDriversLicense && hasGoodVision && !isTired){
+  console.log();
+}
+
+// Switch statement
+
+const day = 'wednesday';
+
+
+switch(day){
+ case 'monday':
+  console.log('Plan course structure');
+  console.log('Go to coding meetups');
+  break;
+  
+  case 'tuesday':
+    console.log('Prepare theory videos');
+    break;
+  
+  case 'wednesday':
+  case 'thursday':
+    console.log('Write code examples');
+    break
+    case 'friday':
+      console.log('Record videos');
+      break;
+
+  case 'saturday':
+  case'sunday':
+    console.log('Enjoy the weekends!');
+    break;
+    
+    default:
+      console.log('Not a valid day');
+    break;
+}
+*/
+
+// Ternary Operators
+
+const age = 27;
+age >= 18 ? console.log('I like to drink wine'):console.log('I like to drink water');
+
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+
